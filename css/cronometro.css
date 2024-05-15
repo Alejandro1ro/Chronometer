@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  letter-spacing: 0.2em;
+  font-size: 5em;
+  font-family: Poppins;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article h2 {
+  font-weight: 100;
+  font-family: Poppins;
+  margin-top: 0.6em;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14em;
+  height: 14em;
+  background: transparent;
+  border-radius: 50%;
+  rotate: -90deg;
+  position: relative;
+}
+
+.circle p {
+  rotate: 90deg;
+  font-size: 6.6em;
+  font-family: fantasy;
+}
+
+.circle-small-dark {
+  display: block;
+  background: #303030;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-small {
+  display: block;
+  background: cyan;
+  border-radius: 50%;
+  position: absolute;
+}
+
+section:nth-child(3) {
+  margin-top: 3em;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #303030;
+  border-radius: 0.4em;
+  border: none;
+  color: #f2f2f2;
+  transition: 0.2s;
+}
+
+button:nth-child(2) {
+  display: none;
+}
+
+button:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+button img {
+  padding: 1em;
+  width: 1em;
+  box-sizing: content-box;
+}
